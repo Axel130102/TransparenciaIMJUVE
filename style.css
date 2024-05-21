@@ -14,7 +14,9 @@
 .sidebar a {
   padding: 10px 15px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 15px;
+  width: 250px;
+  text-align: justify;
   color: #fff;
   display: block;
   transition: 0.3s;
@@ -26,7 +28,7 @@
 .open-btn, .close-btn {
   font-size: 30px;
   cursor: pointer;
-  position: fixed;
+  position:fixed;
   top: 70px;
   right: 20px;
   z-index: 10000001;
@@ -35,7 +37,6 @@
   border: none;
 }
 .close-btn {
-  top: 70px;
   display: none;
 }
 .main-content {
