@@ -1,26 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Transparencia</title>
-    <!-- CSS -->
-    <link href="/favicon.ico" rel="shortcut icon">
-    <link href="https://framework-gb.cdn.gob.mx/assets/styles/main.css" rel="stylesheet">
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Transparencia</title>
+  <!-- CSS -->
+  <link href="/favicon.ico" rel="shortcut icon">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://framework-gb.cdn.gob.mx/assets/styles/main.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Botón de Menú -->
+  <span class="open-btn">&#9776;</span>
 
-    <!-- Contenido -->
-    <main class="page">
-      <div class="container">
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <button class="close-btn">&times;</button>
+    <a href="#home">Inicio</a>
+    <a href="#services">Servicios</a>
+    <a href="#clients">Clientes</a>
+    <a href="#contact">Contacto</a>
+  </div>
 
+  <!-- Contenido Principal -->
+  <div class="main-content">
+    <h1>Bienvenido a Transparencia</h1>
+    <p>Contenido principal de la página...</p>
+  </div>
 
-      </div>
-    </main>
-
-    <!-- JS -->
-    <script src="https://framework-gb.cdn.gob.mx/gobmx.js"></script>
-
-  </body>
+  <!-- JS -->
+  <script src="https://framework-gb.cdn.gob.mx/gobmx.js"></script>
+  <!-- Script navbar -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const openBtn = document.querySelector('.open-btn');
+      const closeBtn = document.querySelector('.close-btn');
+      const sidebar = document.querySelector('.sidebar');
+      const mainContent = document.querySelector('.main-content');
+  
+      openBtn.addEventListener('click', function() {
+        sidebar.style.width = '250px';
+        mainContent.style.marginLeft = '250px';
+        document.body.style.overflow = 'hidden';
+      });
+  
+      closeBtn.addEventListener('click', function() {
+        sidebar.style.width = '0';
+        mainContent.style.marginLeft = '0';
+        document.body.style.overflow = 'auto';
+      });
+    });
+  </script>
+  
+</body>
 </html>

@@ -1,0 +1,59 @@
+    /* Estilos personalizados para la sidebar */
+    .sidebar {
+      z-index: 10000000;
+      height: 100%;
+      width: 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #0C231E;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 20px;
+    }
+    .sidebar a {
+      padding: 10px 15px;
+      text-decoration: none;
+      font-size: 18px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+    .sidebar a:hover {
+      color: #f1f1f1;
+    }
+    .sidebar .dropdown-menu {
+      background-color: #111;
+      border: none;
+    }
+    .sidebar .dropdown-menu > li > a {
+      color: #818181;
+    }
+    .sidebar .dropdown-menu > li > a:hover {
+      background-color: #575757;
+    }
+    .sidebar .close-btn {
+      position: absolute;
+      top: 20px;
+      right: 25px;
+      font-size: 36px;
+    }
+
+    .close-btn{
+      border: none;
+      background-color: transparent;
+      color: white;
+    }
+    .open-btn {
+      font-size: 30px;
+      cursor: pointer;
+      position: fixed;
+      top: 70px;
+      right: 20px;
+      z-index: 10000001;
+      color: #0C231E;
+    }
+    .main-content {
+      transition: margin-left 0.5s;
+      padding: 20px;
+    }
