@@ -13,7 +13,7 @@
 <body>
   <!-- Botón de Menú -->
   <button type="button" class="open-btn btn btn-primary btn-sm">Otros enlaces</button>
-  <button class="close-btn btn btn-primary btn-sm">&times;</button>
+  <button class="close-btn btn btn-primary btn-sm ">Cerrar</button>
 
   <!-- Sidebar -->
   <div class="sidebar">
@@ -25,6 +25,9 @@
       <li><a href="Pages/Información.html">Información de Interés Público</a></li>
     </ul>
   </div>
+
+  <!-- Superposición -->
+  <div class="overlay"></div>
 
   <!-- Titulo Principal -->
   <div class="main-content">
@@ -107,24 +110,42 @@
       const closeBtn = document.querySelector('.close-btn');
       const sidebar = document.querySelector('.sidebar');
       const mainContent = document.querySelector('.main-content');
-  
+      const overlay = document.querySelector('.overlay');
+
+      // Asegurarse de que el botón de cerrar esté oculto al cargar la página
+      closeBtn.style.display = 'none';
+
       openBtn.addEventListener('click', function() {
         sidebar.style.width = '300px';
         mainContent.style.marginLeft = '250px';
         document.body.style.overflow = 'hidden';
         openBtn.style.display = 'none';
         closeBtn.style.display = 'block';
+        overlay.style.display = 'block'; // Mostrar la superposición
       });
-  
+
       closeBtn.addEventListener('click', function() {
         sidebar.style.width = '0';
         mainContent.style.marginLeft = '0';
         document.body.style.overflow = 'auto';
         openBtn.style.display = 'block';
         closeBtn.style.display = 'none';
+        overlay.style.display = 'none'; // Ocultar la superposición
+      });
+
+      // Cerrar la barra lateral cuando se hace clic en un enlace de la barra lateral
+      const sidebarLinks = document.querySelectorAll('.sidebar a');
+      sidebarLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+          sidebar.style.width = '0';
+          mainContent.style.marginLeft = '0';
+          document.body.style.overflow = 'auto';
+          openBtn.style.display = 'block';
+          closeBtn.style.display = 'none';
+          overlay.style.display = 'none'; // Ocultar la superposición
+        });
       });
     });
   </script>
-  
 </body>
 </html>
