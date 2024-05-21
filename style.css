@@ -11,6 +11,11 @@
   transition: 0.5s;
   padding-top: 20px;
 }
+
+.sidebar ul {
+  list-style-type: disc; 
+}
+
 .sidebar a {
   padding: 10px 15px;
   text-decoration: none;
@@ -21,14 +26,16 @@
   display: block;
   transition: 0.3s;
 }
+
 .sidebar a:hover {
   color: #9D2449;
   text-decoration: none;
 }
+
 .open-btn, .close-btn {
   font-size: 30px;
   cursor: pointer;
-  position:fixed;
+  position: fixed;
   top: 70px;
   right: 20px;
   z-index: 10000001;
@@ -36,9 +43,11 @@
   background: none;
   border: none;
 }
+
 .close-btn {
   display: none;
 }
+
 .main-content {
   transition: margin-left 0.5s;
   padding: 20px;

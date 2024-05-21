@@ -9,20 +9,21 @@
   <link href="/favicon.ico" rel="shortcut icon">
   <link rel="stylesheet" href="style.css">
   <link href="https://framework-gb.cdn.gob.mx/assets/styles/main.css" rel="stylesheet">
- 
 </head>
 <body>
   <!-- Botón de Menú -->
   <button type="button" class="open-btn btn btn-primary btn-sm">Otros enlaces</button>
-  <button class="close-btn ">&times;</button>
+  <button class="close-btn btn btn-primary btn-sm">&times;</button>
 
   <!-- Sidebar -->
   <div class="sidebar">
-    <a href="/index.html">Inicio</a>
-    <a href="/Pages/Recomendaciones.html">Recomendaciones en materia de derechos humanos, no discriminación y/o equidad de género</a>
-    <a href="/Pages/Criterios.html">Criterios de la unidad de transparencia</a>
-    <a href="/Pages/Sindicato.html">Sindicato de trabajadores del IMJUVE</a>
-    <a href="Pages/Información.html">Información de Interés Público</a>
+    <ul>
+      <li><a href="/index.html">Inicio</a></li>
+      <li><a href="/Pages/Recomendaciones.html">Recomendaciones en materia de derechos humanos, no discriminación y/o equidad de género</a></li>
+      <li><a href="/Pages/Criterios.html">Criterios de la unidad de transparencia</a></li>
+      <li><a href="/Pages/Sindicato.html">Sindicato de trabajadores del IMJUVE</a></li>
+      <li><a href="Pages/Información.html">Información de Interés Público</a></li>
+    </ul>
   </div>
 
   <!-- Titulo Principal -->
@@ -82,9 +83,6 @@
       </div>
     </div>
     
-    
-
-
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -98,8 +96,6 @@
       </div>
     </div>
     
-      </div>
-    </div>
   </div>
 
   <!-- JS -->
@@ -113,7 +109,7 @@
       const mainContent = document.querySelector('.main-content');
   
       openBtn.addEventListener('click', function() {
-        sidebar.style.width = '250px';
+        sidebar.style.width = '300px';
         mainContent.style.marginLeft = '250px';
         document.body.style.overflow = 'hidden';
         openBtn.style.display = 'none';
