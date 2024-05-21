@@ -9,14 +9,15 @@
   <link href="/favicon.ico" rel="shortcut icon">
   <link rel="stylesheet" href="style.css">
   <link href="https://framework-gb.cdn.gob.mx/assets/styles/main.css" rel="stylesheet">
+ 
 </head>
 <body>
   <!-- Botón de Menú -->
-  <span class="open-btn">&#9776;</span>
+  <button class="open-btn">&#9776;</button>
+  <button class="close-btn">&times;</button>
 
   <!-- Sidebar -->
   <div class="sidebar">
-    <button class="close-btn">&times;</button>
     <a href="#home">Inicio</a>
     <a href="#services">Servicios</a>
     <a href="#clients">Clientes</a>
@@ -43,12 +44,16 @@
         sidebar.style.width = '250px';
         mainContent.style.marginLeft = '250px';
         document.body.style.overflow = 'hidden';
+        openBtn.style.display = 'none';
+        closeBtn.style.display = 'block';
       });
   
       closeBtn.addEventListener('click', function() {
         sidebar.style.width = '0';
         mainContent.style.marginLeft = '0';
         document.body.style.overflow = 'auto';
+        openBtn.style.display = 'block';
+        closeBtn.style.display = 'none';
       });
     });
   </script>
