@@ -1,18 +1,31 @@
+/*Apartado de home en ventanas*/
 .home-icon-container {
   position: fixed;
-  top: 60px;
+  top: 80px;
   right: 20px;
   z-index: 1000; 
-  font-size: 2.56em;
+  font-size: 2em;
 }
 .home-icon-container a {
   color: #606060;
   text-decoration: none;
+  border: 3px solid #606060;
+  border-radius: 50%;
+  padding: 10px;
+
 }
 .home-icon-container a:hover {
   color: #6060608c;
   text-decoration: none;
 }
+/*banner*/
+.banner-img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+/*Tamaño de las imagenes en las tablas*/
 .imagenesTablas {
   width: 50%;
 }
