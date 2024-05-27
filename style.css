@@ -1,76 +1,21 @@
-/* Estilos personalizados para la sidebar */
-.sidebar {
-  z-index: 10000000;
-  height: 100%;
-  width: 0;
+.home-icon-container {
   position: fixed;
   top: 60px;
-  left: 0;
-  background-color: #0C231E;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 20px;
-}
-
-.sidebar ul {
-  list-style-type: disc;
-  color: #B38E5D;
-}
-
-.sidebar a {
-  padding-top: 15px;
-  padding-right: 15px;
-  text-decoration: none;
-  font-size: 15px;
-  width: 250px;
-  text-align: justify;
-  color: #fff;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidebar a:hover {
-  color: #B38E5D;
-  text-decoration: none;
-}
-
-.open-btn, .close-btn {
-  font-size: 30px;
-  cursor: pointer;
-  position: fixed;
-  top: 70px;
   right: 20px;
-  z-index: 10000001;
-  color: #0C231E;
-  background: none;
-  border: none;
+  z-index: 1000; 
+  font-size: 2.56em;
 }
-
-.close-btn {
-  display: none;
+.home-icon-container a {
+  color: #606060;
+  text-decoration: none;
 }
-
-.main-content {
-  transition: margin-left 0.5s;
-  padding: 20px;
+.home-icon-container a:hover {
+  color: #6060608c;
+  text-decoration: none;
 }
-
-.overlay {
-  position: fixed;
-  top: 60;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.1);
-  z-index: 9999;
-  display: none; 
-  backdrop-filter: blur(2px); 
-}
-
 .imagenesTablas {
   width: 50%;
 }
-
-.paddingGobiernoAbierto{
+.paddingGobiernoAbierto {
   padding-right: 30px;
 }
