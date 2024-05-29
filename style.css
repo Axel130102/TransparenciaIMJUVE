@@ -40,7 +40,6 @@
   height: auto;
   object-fit: cover;
   object-position: center;
-  margin-bottom: 10px;
 }
 .center-content {
   display: flex;
@@ -48,3 +47,18 @@
   align-items: center;
   justify-content: center;
 }
+
+.styled-link {
+  color: #285B4D;
+  text-decoration: none;
+  border: none solid #285B4D;
+  box-shadow: 0px 4px 8px rgba(40, 91, 77, 0.5);
+  transition: 300ms;
+}
+
+.styled-link:hover {
+  box-shadow: none;
+  color: rgba(40, 91, 77, 0.9);
+  text-decoration: none;
+}
+
