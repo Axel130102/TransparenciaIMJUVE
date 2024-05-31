@@ -63,3 +63,16 @@
   text-decoration: none;
 }
 
+/*Alturas iguales*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+
+.equal-height {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
