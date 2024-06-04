@@ -28,8 +28,14 @@
   object-position: center;
 }
 /*Tamaño de las imagenes en las tablas*/
+.image-cell {
+  text-align: center; 
+  vertical-align: middle; 
+}
+
 .imagenesTablas {
-  width: 50%;
+  width: 50%; 
+  height: auto;  
 }
 .paddingGobiernoAbierto {
   padding-right: 30px;
