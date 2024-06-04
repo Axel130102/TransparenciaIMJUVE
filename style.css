@@ -32,7 +32,6 @@
   text-align: center; 
   vertical-align: middle; 
 }
-
 .imagenesTablas {
   width: 50%; 
   height: auto;  
@@ -53,7 +52,6 @@
   align-items: center;
   justify-content: center;
 }
-
 .styled-link {
   color: #285B4D;
   text-decoration: none;
@@ -62,20 +60,17 @@
   transition: 300ms;
   margin: 20px;
 }
-
 .styled-link:hover {
   box-shadow: none;
   color: rgba(40, 91, 77, 0.9);
   text-decoration: none;
 }
-
 /*Alturas iguales*/
 .row {
   display: flex;
   flex-wrap: wrap;
   row-gap: 20px;
 }
-
 .equal-height {
   display: flex;
   flex-direction: column;
