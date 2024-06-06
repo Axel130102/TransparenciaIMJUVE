@@ -77,3 +77,10 @@
   justify-content: space-between;
   height: 100%;
 }
+@media (max-width: 767px) { 
+  .responsive-accordion {
+    overflow-x: auto; 
+    white-space: wrap;
+  }
+}
+
