@@ -114,7 +114,9 @@
         </div>
       </div>
 
-      
+      <div id="modal" class="modal-img">
+        <img id="modal-img" src="" alt="Imagen a tamaño completo">
+      </div>
 
       <div class="row">
         <div class="col-md-12">
@@ -135,5 +137,27 @@
 
   <!-- JS -->
   <script src="https://framework-gb.cdn.gob.mx/gobmx.js"></script>
+  <script>
+document.addEventListener('DOMContentLoaded', function () {
+  var modal = document.getElementById('modal');
+  var modalImg = document.getElementById('modal-img');
+  var thumbnails = document.querySelectorAll('.thumbnail img');
+  var body = document.body;
+
+  thumbnails.forEach(function (thumbnail) {
+    thumbnail.addEventListener('click', function () {
+      modal.classList.add('active');
+      modalImg.src = this.src;
+      body.classList.add('no-scroll');
+    });
+  });
+
+  modal.addEventListener('click', function () {
+    modal.classList.remove('active');
+    body.classList.remove('no-scroll');
+  });
+});
+
+  </script>
 </body>
 </html>
